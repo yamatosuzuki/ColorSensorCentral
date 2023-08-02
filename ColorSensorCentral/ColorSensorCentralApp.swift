@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct ColorSensorStubApp: App {
+struct ColorSensorCentralApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

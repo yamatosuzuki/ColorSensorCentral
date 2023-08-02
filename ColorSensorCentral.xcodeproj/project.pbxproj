@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D1EDDC6D2A78CC350092E7CC /* ColorSensorStubApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EDDC6C2A78CC350092E7CC /* ColorSensorStubApp.swift */; };
+		D1EDDC6D2A78CC350092E7CC /* ColorSensorCentralApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EDDC6C2A78CC350092E7CC /* ColorSensorCentralApp.swift */; };
 		D1EDDC6F2A78CC350092E7CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EDDC6E2A78CC350092E7CC /* ContentView.swift */; };
 		D1EDDC712A78CC3B0092E7CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1EDDC702A78CC3B0092E7CC /* Assets.xcassets */; };
 		D1EDDC742A78CC3B0092E7CC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1EDDC732A78CC3B0092E7CC /* Preview Assets.xcassets */; };
@@ -18,13 +18,14 @@
 
 /* Begin PBXFileReference section */
 		D1EDDC692A78CC350092E7CC /* ColorSensorCentral.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorSensorCentral.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D1EDDC6C2A78CC350092E7CC /* ColorSensorStubApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSensorStubApp.swift; sourceTree = "<group>"; };
+		D1EDDC6C2A78CC350092E7CC /* ColorSensorCentralApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSensorCentralApp.swift; sourceTree = "<group>"; };
 		D1EDDC6E2A78CC350092E7CC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D1EDDC702A78CC3B0092E7CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1EDDC732A78CC3B0092E7CC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D1EDDC7C2A78CF860092E7CC /* CentralViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentralViewModel.swift; sourceTree = "<group>"; };
 		D1EDDC9A2A78DADD0092E7CC /* TransferService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferService.swift; sourceTree = "<group>"; };
 		D1EDDCA02A78DB160092E7CC /* CentralView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CentralView.swift; sourceTree = "<group>"; };
+		D1EDDCAC2A7A3D670092E7CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,10 +42,7 @@
 		D1EDDC602A78CC350092E7CC = {
 			isa = PBXGroup;
 			children = (
-				D1EDDC9A2A78DADD0092E7CC /* TransferService.swift */,
-				D1EDDC7C2A78CF860092E7CC /* CentralViewModel.swift */,
-				D1EDDCA02A78DB160092E7CC /* CentralView.swift */,
-				D1EDDC6B2A78CC350092E7CC /* ColorSensorStub */,
+				D1EDDC6B2A78CC350092E7CC /* ColorSensorCentral */,
 				D1EDDC6A2A78CC350092E7CC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,15 +55,19 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D1EDDC6B2A78CC350092E7CC /* ColorSensorStub */ = {
+		D1EDDC6B2A78CC350092E7CC /* ColorSensorCentral */ = {
 			isa = PBXGroup;
 			children = (
-				D1EDDC6C2A78CC350092E7CC /* ColorSensorStubApp.swift */,
+				D1EDDCAC2A7A3D670092E7CC /* Info.plist */,
+				D1EDDC9A2A78DADD0092E7CC /* TransferService.swift */,
+				D1EDDC7C2A78CF860092E7CC /* CentralViewModel.swift */,
+				D1EDDCA02A78DB160092E7CC /* CentralView.swift */,
+				D1EDDC6C2A78CC350092E7CC /* ColorSensorCentralApp.swift */,
 				D1EDDC6E2A78CC350092E7CC /* ContentView.swift */,
 				D1EDDC702A78CC3B0092E7CC /* Assets.xcassets */,
 				D1EDDC722A78CC3B0092E7CC /* Preview Content */,
 			);
-			path = ColorSensorStub;
+			path = ColorSensorCentral;
 			sourceTree = "<group>";
 		};
 		D1EDDC722A78CC3B0092E7CC /* Preview Content */ = {
@@ -150,7 +152,7 @@
 				D1EDDC7D2A78CF860092E7CC /* CentralViewModel.swift in Sources */,
 				D1EDDCA12A78DB160092E7CC /* CentralView.swift in Sources */,
 				D1EDDC9B2A78DADD0092E7CC /* TransferService.swift in Sources */,
-				D1EDDC6D2A78CC350092E7CC /* ColorSensorStubApp.swift in Sources */,
+				D1EDDC6D2A78CC350092E7CC /* ColorSensorCentralApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,10 +280,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ColorSensorStub/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ColorSensorCentral/Preview Content\"";
 				DEVELOPMENT_TEAM = VK2KVWWNDB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ColorSensorCentral/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "他のデバイスとの通信で使用します";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -307,10 +311,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ColorSensorStub/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ColorSensorCentral/Preview Content\"";
 				DEVELOPMENT_TEAM = VK2KVWWNDB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ColorSensorCentral/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "他のデバイスとの通信で使用します";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
